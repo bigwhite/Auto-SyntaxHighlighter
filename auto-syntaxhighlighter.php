@@ -65,6 +65,7 @@ class AutoSyntaxHighlighter {
 			array('sql', 'shBrushSql-min.js'),
 			array('vb vbnet', 'shBrushVb-min.js'),
 			array('xml xhtml xslt html', 'shBrushXml-min.js'),
+			array('go golang', 'shBrushGo-min.js'),
 		));
 		add_filter('the_content', array($this, 'getContentLang'));
 		add_action('wp_footer', array($this,'outputScripts'));
